@@ -54,11 +54,23 @@ class WP_Reset_Admin {
         wp_localize_script('wprb-admin', 'wprb_vars', [
             'ajax_url' => admin_url('admin-ajax.php'),
             'nonce' => wp_create_nonce('wprb_nonce'),
+            'site_name' => get_bloginfo('name'),
             'i18n' => [
                 'confirm_send' => __('Êtes-vous sûr de vouloir envoyer les emails de réinitialisation ?', 'wp-password-reset-bulk'),
                 'sending' => __('Envoi en cours...', 'wp-password-reset-bulk'),
                 'complete' => __('Terminé !', 'wp-password-reset-bulk'),
-                'error' => __('Une erreur est survenue', 'wp-password-reset-bulk')
+                'error' => __('Une erreur est survenue', 'wp-password-reset-bulk'),
+                'email_preview_title' => __('Aperçu de l\'email de réinitialisation', 'wp-password-reset-bulk'),
+                'email_preview_heading' => __('Réinitialisation de votre mot de passe', 'wp-password-reset-bulk'),
+                'email_preview_greeting' => __('Bonjour %s,', 'wp-password-reset-bulk'),
+                'email_preview_instructions' => __('Quelqu\'un a demandé la réinitialisation du mot de passe pour votre compte. Si vous n\'êtes pas à l\'origine de cette demande, vous pouvez ignorer cet email.', 'wp-password-reset-bulk'),
+                'email_preview_button' => __('Réinitialiser mon mot de passe', 'wp-password-reset-bulk'),
+                'email_preview_alt_link' => __('Si le bouton ne fonctionne pas, vous pouvez copier et coller le lien suivant dans votre navigateur :', 'wp-password-reset-bulk'),
+                'email_preview_expiry' => __('Ce lien expirera dans 24 heures.', 'wp-password-reset-bulk'),
+                'email_preview_ignore' => __('Si vous n\'avez pas demandé de réinitialisation de mot de passe, aucune action n\'est requise.', 'wp-password-reset-bulk'),
+                'email_preview_signature' => __('Cordialement', 'wp-password-reset-bulk'),
+                'select_at_least_one_role' => __('Veuillez sélectionner au moins un rôle.', 'wp-password-reset-bulk'),
+                'confirm_test_mode' => __('Vous êtes en mode test. Les emails seront envoyés uniquement aux adresses de test.', 'wp-password-reset-bulk')
             ]
         ]);
     }

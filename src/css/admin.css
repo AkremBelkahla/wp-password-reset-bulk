@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .wprb-btn {
+    @apply wprb-inline-flex wprb-items-center wprb-px-4 wprb-py-2 wprb-border wprb-rounded-md wprb-text-sm wprb-font-medium wprb-transition-colors wprb-duration-150 wprb-ease-in-out;
+  }
+
+  .wprb-btn-primary {
+    @apply wprb-btn wprb-bg-wp-primary wprb-text-white wprb-border-wp-primary hover:wprb-bg-wp-primary-darker hover:wprb-border-wp-primary-darker focus:wprb-outline-none focus:wprb-ring-2 focus:wprb-ring-offset-2 focus:wprb-ring-wp-primary;
+  }
+
+  .wprb-btn-secondary {
+    @apply wprb-btn wprb-bg-white wprb-text-gray-700 wprb-border-gray-300 hover:wprb-bg-gray-50 focus:wprb-outline-none focus:wprb-ring-2 focus:wprb-ring-offset-2 focus:wprb-ring-wp-primary;
+  }
+
+  .wprb-card {
+    @apply wprb-bg-white wprb-rounded-lg wprb-shadow wprb-border wprb-border-wp-border wprb-p-6 wprb-mb-6;
+  }
+
+  .wprb-progress {
+    @apply wprb-h-6 wprb-bg-gray-200 wprb-rounded-full wprb-overflow-hidden;
+  }
+
+  .wprb-progress-bar {
+    @apply wprb-h-full wprb-bg-wp-primary wprb-transition-all wprb-duration-300 wprb-ease-in-out;
+  }
+
+  .wprb-table {
+    @apply wprb-min-w-full wprb-divide-y wprb-divide-gray-200;
+  }
+
+  .wprb-table th {
+    @apply wprb-px-6 wprb-py-3 wprb-bg-gray-50 wprb-text-left wprb-text-xs wprb-font-medium wprb-text-gray-500 wprb-uppercase wprb-tracking-wider;
+  }
+
+  .wprb-table td {
+    @apply wprb-px-6 wprb-py-4 wprb-whitespace-nowrap wprb-text-sm wprb-text-gray-500;
+  }
+
+  .wprb-badge {
+    @apply wprb-inline-flex wprb-items-center wprb-px-2.5 wprb-py-0.5 wprb-rounded-full wprb-text-xs wprb-font-medium;
+  }
+
+  .wprb-badge-success {
+    @apply wprb-badge wprb-bg-green-100 wprb-text-green-800;
+  }
+
+  .wprb-badge-error {
+    @apply wprb-badge wprb-bg-red-100 wprb-text-red-800;
+  }
+
+  .wprb-badge-warning {
+    @apply wprb-badge wprb-bg-yellow-100 wprb-text-yellow-800;
+  }
+
+  .wprb-alert {
+    @apply wprb-rounded-md wprb-p-4 wprb-mb-4;
+  }
+
+  .wprb-alert-success {
+    @apply wprb-alert wprb-bg-green-50 wprb-text-green-700 wprb-border wprb-border-green-200;
+  }
+
+  .wprb-alert-error {
+    @apply wprb-alert wprb-bg-red-50 wprb-text-red-700 wprb-border wprb-border-red-200;
+  }
+
+  .wprb-alert-warning {
+    @apply wprb-alert wprb-bg-yellow-50 wprb-text-yellow-700 wprb-border wprb-border-yellow-200;
+  }
+
+  .wprb-form-group {
+    @apply wprb-mb-4;
+  }
+
+  .wprb-label {
+    @apply wprb-block wprb-text-sm wprb-font-medium wprb-text-gray-700 wprb-mb-1;
+  }
+
+  .wprb-checkbox {
+    @apply wprb-rounded wprb-border-gray-300 wprb-text-wp-primary focus:wprb-ring-wp-primary;
+  }
+
+  .wprb-modal {
+    @apply wprb-fixed wprb-inset-0 wprb-z-50 wprb-overflow-y-auto;
+  }
+
+  .wprb-modal-overlay {
+    @apply wprb-fixed wprb-inset-0 wprb-bg-black wprb-bg-opacity-50;
+  }
+
+  .wprb-modal-container {
+    @apply wprb-relative wprb-bg-white wprb-rounded-lg wprb-max-w-lg wprb-mx-auto wprb-my-8 wprb-shadow-xl;
+  }
+
+  .wprb-modal-header {
+    @apply wprb-px-6 wprb-py-4 wprb-border-b wprb-border-gray-200;
+  }
+
+  .wprb-modal-body {
+    @apply wprb-px-6 wprb-py-4;
+  }
+
+  .wprb-modal-footer {
+    @apply wprb-px-6 wprb-py-4 wprb-bg-gray-50 wprb-rounded-b-lg wprb-border-t wprb-border-gray-200;
+  }
+
+  .wprb-spinner {
+    @apply wprb-animate-spin wprb-h-5 wprb-w-5 wprb-text-white;
+  }
+}
