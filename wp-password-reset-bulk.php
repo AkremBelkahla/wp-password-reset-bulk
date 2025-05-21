@@ -1,22 +1,17 @@
 <?php
 /**
- * Plugin Name: Bulk Password Reset for WordPress
- * Plugin URI: https://github.com/AkremBelkahla/wp-bulk-password-reset
- * Description: A simple and efficient way to send password reset emails to multiple users at once. Filter users by role and preview emails before sending.
+ * Plugin Name: Bulk Password Reset
+ * Plugin URI: https://github.com/AkremBelkahla/wp-password-reset-bulk
+ * Description: Send password reset emails in bulk to WordPress users. Easily manage password resets for multiple users at once.
  * Version: 2.0.0
  * Author: Akrem Belkahla
  * Author URI: https://infinityweb.tn
- * Text Domain: wp-bulk-password-reset
+ * Text Domain: wp-password-reset-bulk
  * Domain Path: /languages
  * Requires at least: 5.6
  * Requires PHP: 7.4
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * GitHub Plugin URI: https://github.com/AkremBelkahla/wp-bulk-password-reset
- * 
- * @package WPBulkPasswordReset
- * @author Akrem Belkahla
- * @link https://infinityweb.tn
  */
 
 // Si ce fichier est appelé directement, on sort
