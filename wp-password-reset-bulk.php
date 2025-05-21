@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: Bulk Password Reset
- * Plugin URI: https://github.com/AkremBelkahla/wp-password-reset-bulk
- * Description: Send password reset emails in bulk to WordPress users. Easily manage password resets for multiple users at once.
+ * Plugin Name: Envoi en masse - Réinitialisation des mots de passe
+ * Plugin URI: 
+ * Description: Permet d'envoyer des emails de réinitialisation de mot de passe en masse aux utilisateurs
  * Version: 2.0.0
- * Author: Akrem Belkahla
- * Author URI: https://infinityweb.tn
+ * Author: Votre Nom
+ * Author URI: 
  * Text Domain: wp-password-reset-bulk
  * Domain Path: /languages
  * Requires at least: 5.6
